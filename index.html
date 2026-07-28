@@ -3,11 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Website</title>
+    <title>My First RESTAURANT Website</title>
 </head>
 <body>
-    <h1>Hello World!</h1>
-    <p>I am learning web development again after 20 years and it will be fun!</p>
-    <p> well, now it is updated again, going to check some more cool stuff soon </p>
+    <h1>Hello and welcome to our restaurant MFOOD!</h1>
+    <p> check out our menu! I am learning web development again after 20 years and it will be fun!</p>
+    <p>
+        Learn more about our history on 
+        <a href="https://wikipedia.org" target="_blank"> Wikipedia</a>.
+    </p>
+    <hr>
+ <!-- following dropdown for reservations -->
+    <h3> table reservations</h3>
+    <label for="guests">Choose number of guests for your reservation:</label>
+    <select name="guests" id="guests">
+        <option value="1">1 Person</option>
+        <option value="2">2 People</option>
+        <option value="3">3 People</option>
+        <option value="4">4 People</option>
+        <option value="5">5 People</option>
+        <option value="6">6 People</option>
+        <option value="7">7 People</option>
+        <option value="8">8 People</option>
+        <option value="9">9 People</option>
+        <option value="10">10 People</option>
+    </select>
+    <label for="date">Choose a date for your reservation:</label>
+    <input type="date" id="date" name="date">
+    <button type="submit">Make Reservation</button>
+    
 </body>
 </html>
