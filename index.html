@@ -31,6 +31,48 @@
     <label for="date">Choose a date for your reservation:</label>
     <input type="date" id="date" name="date">
     <button type="submit">Make Reservation</button>
+  <h3> toto hore pokus jedna a este nizsie dam  ten form</h3>
+  <hr>
 
+    <h3>Table Reservation</h3>
+    
+    <!-- The <form> tag groups all our inputs together -->
+    <form>
+        <!-- 1. GUEST DROPDOWN (From before) -->
+        <p>
+            <label for="guests">How many guests?</label><br>
+            <select id="guests">
+                <option value="1">1 Person</option>
+                <option value="2">2 People</option>
+                <option value="3">3 People</option>
+                <option value="4">4 People</option>
+            </select>
+        </p>
+
+        <!-- 2. THE DATE PICKER -->
+        <p>
+            <label for="res-date">Choose Date:</label><br>
+            <!-- type="date" automatically creates a popup calendar! -->
+            <input type="date" id="res-date" required>
+        </p>
+
+        <!-- 3. THE TIME PICKER -->
+        <p>
+            <label for="res-time">Choose Time:</label><br>
+            <!-- type="time" automatically creates a time selector! -->
+            <input type="time" id="res-time" required>
+        </p>
+
+        <!-- 4. CUSTOMER NAME -->
+        <p>
+            <label for="client-name">Your Full Name:</label><br>
+            <input type="text" id="client-name" placeholder="John Doe" required>
+        </p>
+
+        <!-- 5. THE SUBMIT BUTTON -->
+        <p>
+            <button type="submit">Request Reservation</button>
+        </p>
+    </form>
 </body>
 </html>
