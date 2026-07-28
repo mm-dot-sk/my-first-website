@@ -37,11 +37,11 @@
     <h3>Table Reservation</h3>
     
     <!-- The <form> tag groups all our inputs together -->
-    <form>
+    <form action="https://formspree.io/f/maqrvkkw" method="POST">
         <!-- 1. GUEST DROPDOWN (From before) -->
         <p>
             <label for="guests">How many guests?</label><br>
-            <select id="guests">
+            <select id="guests" name="guests">
                 <option value="1">1 Person</option>
                 <option value="2">2 People</option>
                 <option value="3">3 People</option>
@@ -53,20 +53,31 @@
         <p>
             <label for="res-date">Choose Date:</label><br>
             <!-- type="date" automatically creates a popup calendar! -->
-            <input type="date" id="res-date" required>
+            <input type="date" id="res-date" name="res-date" required>
         </p>
 
-        <!-- 3. THE TIME PICKER -->
-        <p>
-            <label for="res-time">Choose Time:</label><br>
-            <!-- type="time" automatically creates a time selector! -->
-            <input type="time" id="res-time" required>
-        </p>
+
+<!-- 3. THE TIME SLOT DROPDOWN -->
+<p>
+    <label for="res-time">Choose Time Slot:</label><br>
+    <!-- We use a dropdown instead of a clock so users can only pick open hours -->
+    <select id="res-time" name="res-time" required>
+        <option value="" disabled selected>Select a time...</option>
+        <option value="13:00">1:00 PM</option>
+        <option value="18:00">6:00 PM</option>
+        <option value="19:00">7:00 PM</option>
+        <option value="20:00">8:00 PM</option>
+        <option value="21:00">9:00 PM</option>
+        <option value="22:00">10:00 PM</option>
+        <option value="23:00">11:00 PM</option>
+    </select>
+</p>
+
 
         <!-- 4. CUSTOMER NAME -->
         <p>
             <label for="client-name">Your Full Name:</label><br>
-            <input type="text" id="client-name" placeholder="John Doe" required>
+            <input type="text" id="client-name" name="client-name" placeholder="John Doe" required>
         </p>
 
         <!-- 5. THE SUBMIT BUTTON -->
